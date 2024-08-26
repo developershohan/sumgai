@@ -12,7 +12,6 @@
 //   });
 // });
 
-
 //   hamburger toggle on mobile
 
 const open_button = document.querySelector(".open_button");
@@ -33,10 +32,10 @@ close_button.addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", function () {
   const currentPage = window.location.pathname.split("/").pop();
 
-
   // Add active class to current page links
   const addActiveClass = (selector) => {
-    document.querySelectorAll(selector).forEach(link => {
+    document.querySelectorAll(selector).forEach((link) => {
+      console.log(link);
       if (link.getAttribute("href") === currentPage) {
         link.parentElement.classList.add("active");
       }
@@ -45,4 +44,5 @@ document.addEventListener("DOMContentLoaded", function () {
 
   addActiveClass(".nav ul li a");
   addActiveClass(".mobile_nav ul li a");
+  addActiveClass(".bottom_nav ul li a");
 });
