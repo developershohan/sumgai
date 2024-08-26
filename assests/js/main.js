@@ -1,16 +1,4 @@
-// JavaScript for handling sidebar toggle on mobile
-// document.getElementById("hamburger").addEventListener("click", function () {
-//   var sidebar = document.getElementById("sidebar");
-//   sidebar.classList.toggle("hidden");
-// });
 
-// $(document).ready(function () {
-//   $('[data-fancybox="gallery"]').fancybox({
-//     buttons: ["fullScreen", "close"],
-//     loop: true,
-//     protect: true,
-//   });
-// });
 
 //   hamburger toggle on mobile
 
@@ -45,4 +33,20 @@ document.addEventListener("DOMContentLoaded", function () {
   addActiveClass(".nav ul li a");
   addActiveClass(".mobile_nav ul li a");
   addActiveClass(".bottom_nav ul li a");
+});
+
+
+// lightbox
+
+$(document).ready(function() {
+    $('[data-fancybox="gallery"]').fancybox({
+        buttons: [
+            "zoom",
+            "slideShow",
+            "fullScreen",
+            "close"
+        ],
+        loop: true,
+        protect: true
+    });
 });

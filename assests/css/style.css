@@ -89,6 +89,7 @@ p {
   margin: 0;
   padding: 0;
   font-family: var(--font-vcsm);
+
 }
 
 a:hover {
@@ -175,4 +176,29 @@ ul li {
 .home_content_details h3 {
   font-family: var(--font-ftnk);
   text-align: center;
+}
+
+
+/* content */
+.content_heading h3{
+font-family: var(--font-ftnk);
+
+}
+.content_heading p{
+color: var(--hover-color);
+
+}
+
+
+/* lightbox */
+.fancybox__nav button{
+    background:#696969 ;
+}
+.fancybox__thumbs,
+.fancybox__toolbar__items--left,
+.fancybox__button--zoom,
+.fancybox__button--slideshow,
+.fancybox__button--fullscreen,
+.fancybox__button--thumbs{
+    display: none;
 }
