@@ -1,12 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>systems-layers-iii</h1>
-    <a href="/">work</a>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Sidebar</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.25/dist/fancybox.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="./assests/css/style.css" />
+  </head>
+  <body class="flex justify-center">
+    <div class="lg:container flex flex-col md:flex-row  w-full">
+      <!-- Header Start -->
+
+      <div
+        class="relative md:w-[25%] w-full flex md:flex-col justify-between items-center content-center">
+        <!-- logo start -->
+        <div class="logo_wrapper flex items-center py-10 px-12">
+          <a href="/">Matthias Heiderich</a>
+        </div>
+        <!-- logo end -->
+        <!-- nav Start -->
+        <div class="nav hidden md:flex flex-col items-center gap-4">
+          <a href="/" class="uppercase">Work</a>
+          <ul class="flex flex-col justify-center items-center">
+            <li>
+              <a href="systems-layers-iii.html">Systems / Layers III</a>
+            </li>
+            <li>
+              <a href="systems-layers.html">Systems / Layers </a>
+            </li>
+            <li>
+              <a href="systems-layers-i.html">Systems / Layers I</a>
+            </li>
+            <li>
+              <a href="systems-layers-ii.html">Systems / Layers II</a>
+            </li>
+          </ul>
+          <div class="flex flex-col items-center">
+            <a href="/about.html">About</a>
+            <a href="/contact.html">contact</a>
+          </div>
+        </div>
+        <!-- nav End -->
+        <div class="hamburger flex cursor-pointer relative w-[30px] h-[30px] justify-center text-white items-center visible md:hidden mr-5 z-50">
+          <div class="open_button absolute ">
+            <i class="fa-solid fa-bars text-2xl"></i>
+          </div>
+          <div class="close_button hidden absolute z-50">
+            <i class="fa-solid fa-xmark text-2xl z-50"></i>
+          </div>
+        </div>
+
+        <!-- Mobile Nav Start -->
+        <div
+          class=" mobile_nav absolute top-0 bottom-0 left-0 right-0 bg-white flex flex-col items-center h-[100vh] justify-center">
+          <a href="/" class="first_menu uppercase">Work</a>
+          <ul class="flex flex-col justify-center items-center">
+            <li>
+              <a href="systems-layers-iii.html">Systems / Layers III</a>
+            </li>
+            <li>
+              <a href="systems-layers.html">Systems / Layers </a>
+            </li>
+            <li>
+              <a href="systems-layers-i.html">Systems / Layers I</a>
+            </li>
+            <li>
+              <a href="systems-layers-ii.html">Systems / Layers II</a>
+            </li>
+          </ul>
+          <a href="/about.html">About</a>
+          <a href="/contact.html">contact</a>
+        </div>
+        <!-- Mobile Nav End -->
+      </div>
+      <!-- Header End -->
+      <div class="md:w-[75%] w-full ">hi</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.25/dist/fancybox.umd.js"></script>
+    <script src="./assests/js/main.js"></script>
+  </body>
 </html>

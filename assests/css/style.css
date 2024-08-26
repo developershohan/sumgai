@@ -1,5 +1,136 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* fonts */
+
+@font-face {
+  font-family: ftnk;
+  src: url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3)
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: ftnk;
+  src: url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?subset_id=2&fvd=n5&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?subset_id=2&fvd=n5&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?subset_id=2&fvd=n5&v=3)
+      format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: ftnk;
+  src: url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3)
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: vcsm;
+  src: url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/l?subset_id=2&fvd=n4&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/d?subset_id=2&fvd=n4&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/efe4a5/00000000000000007735e609/30/a?subset_id=2&fvd=n4&v=3)
+      format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: vcsm;
+  src: url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/l?subset_id=2&fvd=n7&v=3)
+      format("woff2"),
+    url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/d?subset_id=2&fvd=n7&v=3)
+      format("woff"),
+    url(https://use.typekit.net/af/2555e1/00000000000000007735e603/30/a?subset_id=2&fvd=n7&v=3)
+      format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-stretch: normal;
+  font-display: auto;
+}
+
+:root {
+  --font-ftnk: "ftnk";
+  --font-vcsm: "vcsm";
+  --primary-color: #222;
+  --hover-color: #999;
+}
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-vcsm);
+}
+
+a:hover {
+  color: var(--hover-color);
+}
+
+.logo_wrapper {
+  font-family: var(--font-ftnk);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.logo_wrapper {
+  text-align: center;
+}
+.hamburger i {
+  color: var(--primary-color);
+}
+.mobile_nav {
+  display: none !important;
+}
+.hamburger_visible {
+  display: inline-flex !important;
+}
+.logo_wrapper a {
+  font-family: var(--font-ftnk);
+  color: var(--primary-color);
+}
+.mobile_nav:first-child,
+.nav:first-child {
+  color: var(--primary-color);
+}
+
+ul li{
+    color: var(--hover-color);
+}
+
+
+.active a {
+    color: red; 
+    font-weight: bold; 
 }
