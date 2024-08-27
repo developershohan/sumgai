@@ -15,6 +15,7 @@
 
     <link rel="stylesheet" href="./assests/css/style.css" />
   </head>
+
   <body class="flex justify-center">
     <div class="xl:container flex flex-col md:flex-row w-full">
       <!-- Header Start -->
@@ -111,30 +112,48 @@
         <!-- Mobile Nav End -->
       </div>
       <!-- Header End -->
-      <div class="md:w-[75%] w-full">
-        <div
-          class="home_content_wrapper flex flex-col sm:flex-row gap-0 flex-wrap w-full">
-          <div class="home_content_box relative W-[50%]">
-            <a href="systems-layers-iii.html">
-              <img src="./assests/images/asset 0.jpeg" alt="" />
-              <div class="home_content_details">
-                <h3>2015</h3>
-                <h2 class="lg:text-5xl text-3xl">Systems / Layers III</h2>
-              </div></a
-            >
+
+      <!-- main content Start -->
+      <div class="md:w-[75%] w-full md:py-20 py-4">
+        <div class="content_wrapper flex justify-center flex-col gap-10">
+          <!-- content heading Start -->
+          <div
+            class="content_heading text-center flex flex-col w-full justify-center items-center">
+            <h3 class="md:text-6xl text-3xl uppercase pb-4">Contact</h3>
           </div>
-          <!-- <div class="home_content_box relative W-[50%]">
-            <a href="systems-layers-iii.html">
-              <img src="./assests/images/asset 0.jpeg" alt="" />
-              <div class="home_content_details">
-                <h3>2015</h3>
-                <h2 class="lg:text-5xl text-3xl">Systems / Layers III</h2>
-              </div></a
-            >
-          </div> -->
+          <!-- content heading End -->
+          <!-- content Body Start -->
+          <div
+            class="content_body m-auto md:w-[500px] w-[90%] px-4">
+            <form action="https://api.web3forms.com/submit" method="POST" class="flex flex-col gap-4">
+              <input
+                type="hidden"
+                name="access_key"
+                value="1d33a095-f569-48ba-9fe7-e2e09835995b" />
+
+              <div class="flex flex-col gap-2">
+
+                <label > Name <span>*</span></label>
+                <input type="text" name="name" placeholder="Your Name..." required />
+              </div>
+              <div class="flex flex-col gap-2">
+                
+                <label > Email Address <span>*</span></label>
+                <input type="email" name="email" placeholder="Your Email Address" required />
+              </div>
+              <div class="flex flex-col gap-2">
+                <label > message <span>*</span></label>
+
+                <textarea name="message" rows="6" placeholder="Your Message..." required></textarea>
+              </div>
+              <button type="submit" class=" flex w-fit py-2  px-8 text-white font-bold rounded">Submit</button>
+            </form>
+          </div>
         </div>
+        <!-- content Body End -->
       </div>
     </div>
+    <!-- main content End -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.25/dist/fancybox.umd.js"></script>

@@ -15,33 +15,27 @@
 
     <link rel="stylesheet" href="./assests/css/style.css" />
   </head>
+
   <body class="flex justify-center">
-    <div class="lg:container flex flex-col md:flex-row w-full">
+    <div class="xl:container flex flex-col md:flex-row w-full">
       <!-- Header Start -->
 
       <div
-        class="relative md:w-[25%] w-full flex md:flex-col justify-between items-center content-center">
+        class="relative md:w-[25%] w-full flex md:flex-col md:justify-start items-center ">
         <!-- logo start -->
-        <div class="logo_wrapper flex items-center py-10 px-12">
-          <a href="/">Matthias Heiderich</a>
+        <div class="logo_wrapper flex items-center py-10 px-12 w-full">
+          <a href="/" class="m-auto">Matthias Heiderich</a>
         </div>
         <!-- logo end -->
         <!-- nav Start -->
-        <div class="nav hidden md:flex flex-col items-center gap-4">
+        <div
+          class="nav hidden md:flex flex-col items-center gap-4 justify-start">
           <a href="/" class="uppercase font-bold">Work</a>
           <ul class="flex flex-col justify-center items-center gap-2">
             <li>
               <a href="systems-layers-iii.html">Systems / Layers III</a>
             </li>
-            <li>
-              <a href="systems-layers.html">Systems / Layers </a>
-            </li>
-            <li>
-              <a href="systems-layers-i.html">Systems / Layers I</a>
-            </li>
-            <li>
-              <a href="systems-layers-ii.html">Systems / Layers II</a>
-            </li>
+ 
           </ul>
           <div class="bottom_nav">
             <ul>
@@ -49,6 +43,24 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
+          <!-- social media Start -->
+          <div class="nav_social_media">
+            <ul class="flex gap-4">
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tumblr"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- social media End -->
         </div>
         <!-- nav End -->
         <div
@@ -56,27 +68,18 @@
           <div class="open_button absolute">
             <i class="fa-solid fa-bars text-2xl"></i>
           </div>
-          <div class="close_button hidden absolute z-50">
+          <div class="close_button fixed hidden z-50">
             <i class="fa-solid fa-xmark text-2xl z-50"></i>
           </div>
         </div>
 
         <!-- Mobile Nav Start -->
         <div
-          class="mobile_nav absolute top-0 bottom-0 left-0 right-0 bg-white flex flex-col items-center h-[100vh] justify-center">
-          <a href="/" class="first_menu uppercase">Work</a>
-          <ul class="flex flex-col justify-center items-center">
+          class="mobile_nav fixed top-0 bottom-0 left-0 right-0 bg-white flex flex-col items-center h-[100vh] justify-center z-10 gap-6">
+          <a href="/" class="first_menu uppercase font-bold">Work</a>
+          <ul class="flex flex-col justify-center items-center gap-6">
             <li>
               <a href="systems-layers-iii.html">Systems / Layers III</a>
-            </li>
-            <li>
-              <a href="systems-layers.html">Systems / Layers </a>
-            </li>
-            <li>
-              <a href="systems-layers-i.html">Systems / Layers I</a>
-            </li>
-            <li>
-              <a href="systems-layers-ii.html">Systems / Layers II</a>
             </li>
           </ul>
           <div class="bottom_nav">
@@ -85,12 +88,102 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
+
+          <!-- social media Start -->
+          <hr />
+          <div class="nav_social_media">
+            <ul class="flex gap-6">
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tumblr"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- social media End -->
         </div>
         <!-- Mobile Nav End -->
       </div>
       <!-- Header End -->
-      <div class="md:w-[75%] w-full">hi</div>
+
+      <!-- main content Start -->
+      <div class="md:w-[75%] w-full md:py-20 py-4">
+        <div class="content_wrapper flex justify-center flex-col gap-10">
+          <!-- content heading Start -->
+          <div
+            class="content_heading text-center flex flex-col w-full justify-center items-center">
+            <h3 class="md:text-6xl text-3xl uppercase pb-4">About</h3>
+            <p class="max-w-2xl pt-10 text-base font-normal px-4">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
+              soluta odit reprehenderit nemo, voluptatem non officia pariatur,
+              excepturi obcaecati doloribus suscipit labore dolorem similique
+              ipsam, officiis in quos molestiae. Animi.
+            </p>
+
+            <hr />
+            <h2 class="max-w-2xl pb-4 text-base font-normal">
+              SPEKTRUM BERLIN
+            </h2>
+            <p class="max-w-2xl text-base font-normal px-4">
+              Matthias Heiderich (Editions Intervalles, Paris 2014)
+            </p>
+          </div>
+          <!-- content heading End -->
+          <!-- content Body Start -->
+          <div
+            class="content_body flex items-center content-center justify-center flex-col">
+            <div class="content_wrapper">
+              <div id="project-modules " class="flex flex-col gap-8">
+                <div
+                  class="project-module module image project-module-image editable js-editable js-project-module">
+                  <a
+                    data-fancybox="gallery"
+                    href="https://pro2-bar-s3-cdn-cf.myportfolio.com/d4d42d62c29db7e3f4e394a5e7b4b4d1/1816a9b77fcb9f400c415c19.jpg?h=4de473fe159b24232421a9f3af9a835d"
+                    class="js-lightbox lightbox-link">
+                    <img
+                      class="js-lazy image-loaded"
+                      src="https://pro2-bar-s3-cdn-cf.myportfolio.com/d4d42d62c29db7e3f4e394a5e7b4b4d1/1816a9b77fcb9f400c415c19_rw_1200.jpg?h=7a6a3c3ebe802816155c806b9fdd44c2"
+                      width="950"
+                      alt="Image 1" />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content Body End -->
+        <!-- content heading Start -->
+        <div
+          class="content_heading text-center flex flex-col w-full justify-center items-center">
+          <p class="max-w-2xl pt-10 text-base font-normal px-4">
+            "For a hundred years, architecture has been recognized as an undisputable
+            trademark of German photography. From Albert Renger-Patzsch to Karl-
+            Hugo SchmölZ and Of course Hilla and Bemd Becher, many innovators of
+            architectural photography are indeed German. German photography has led
+            the world into a new understanding of our relationship to the urban and
+            man-made environment It revealed how photographs of architecture are
+            important, not only as art, but also as a testimony Of time, trends and
+            evolution, as documentary of buildings that have since been destroyed.
+            Matthias Heiderich's photos are not the exceptions to the rule. The influence
+            Of the German tradition is omnipresent in his work With the same rigor and
+            pragmatism as the Bechers, HeideriCh also creates typologies Of industrial
+            buildings and structures. Just like them, he isn't interested in the human
+            form and yet each of his photos is full of humanity, emphasizing how each
+            building is a product Of human mind and skill. [...r
+            Gwen Lafage
+          </p>
+        </div>
+        <!-- content heading End -->
+      </div>
     </div>
+    <!-- main content End -->
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0.25/dist/fancybox.umd.js"></script>

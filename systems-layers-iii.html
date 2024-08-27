@@ -20,28 +20,21 @@
       <!-- Header Start -->
 
       <div
-        class="relative md:w-[25%] w-full flex md:flex-col md:justify-start justify-between items-center content-center">
+        class="relative md:w-[25%] w-full flex md:flex-col md:justify-start items-center content-center">
         <!-- logo start -->
-        <div class="logo_wrapper flex items-center py-10 px-12">
-          <a href="/">Matthias Heiderich</a>
+        <div class="logo_wrapper flex items-center py-10 px-12 w-full">
+          <a href="/" class="m-auto">Matthias Heiderich</a>
         </div>
         <!-- logo end -->
         <!-- nav Start -->
-        <div class="nav hidden md:flex flex-col items-center gap-4 justify-start">
+        <div
+          class="nav hidden md:flex flex-col items-center gap-4 justify-start">
           <a href="/" class="uppercase font-bold">Work</a>
           <ul class="flex flex-col justify-center items-center gap-2">
             <li>
               <a href="systems-layers-iii.html">Systems / Layers III</a>
             </li>
-            <li>
-              <a href="systems-layers.html">Systems / Layers </a>
-            </li>
-            <li>
-              <a href="systems-layers-i.html">Systems / Layers I</a>
-            </li>
-            <li>
-              <a href="systems-layers-ii.html">Systems / Layers II</a>
-            </li>
+ 
           </ul>
           <div class="bottom_nav">
             <ul>
@@ -49,6 +42,24 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
+          <!-- social media Start -->
+          <div class="nav_social_media">
+            <ul class="flex gap-4">
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tumblr"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- social media End -->
         </div>
         <!-- nav End -->
         <div
@@ -56,27 +67,18 @@
           <div class="open_button absolute">
             <i class="fa-solid fa-bars text-2xl"></i>
           </div>
-          <div class="close_button hidden absolute z-50">
+          <div class="close_button fixed hidden z-50">
             <i class="fa-solid fa-xmark text-2xl z-50"></i>
           </div>
         </div>
 
         <!-- Mobile Nav Start -->
         <div
-          class="mobile_nav absolute top-0 bottom-0 left-0 right-0 bg-white flex flex-col items-center h-[100vh] justify-center z-10">
-          <a href="/" class="first_menu uppercase">Work</a>
-          <ul class="flex flex-col justify-center items-center">
+          class="mobile_nav fixed top-0 bottom-0 left-0 right-0 bg-white flex flex-col items-center h-[100vh] justify-center z-10 gap-6">
+          <a href="/" class="first_menu uppercase font-bold">Work</a>
+          <ul class="flex flex-col justify-center items-center gap-6">
             <li>
               <a href="systems-layers-iii.html">Systems / Layers III</a>
-            </li>
-            <li>
-              <a href="systems-layers.html">Systems / Layers </a>
-            </li>
-            <li>
-              <a href="systems-layers-i.html">Systems / Layers I</a>
-            </li>
-            <li>
-              <a href="systems-layers-ii.html">Systems / Layers II</a>
             </li>
           </ul>
           <div class="bottom_nav">
@@ -85,19 +87,39 @@
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
+
+          <!-- social media Start -->
+          <hr />
+          <div class="nav_social_media">
+            <ul class="flex gap-6">
+              <li>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-behance"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li>
+                <a href="#"><i class="fa-brands fa-tumblr"></i></a>
+              </li>
+            </ul>
+          </div>
+          <!-- social media End -->
         </div>
         <!-- Mobile Nav End -->
       </div>
       <!-- Header End -->
 
       <!-- main content Start -->
-      <div class="md:w-[75%] w-full py-20">
+      <div class="md:w-[75%] w-full md:py-20 py-4">
         <div class="content_wrapper flex justify-center flex-col gap-10">
           <!-- content heading Start -->
           <div
             class="content_heading text-center flex flex-col w-full justify-center items-center">
-            <h3 class="text-5xl uppercase pb-4">Systems / Layers III</h3>
-            <p class="max-w-3xl text-base font-bold">
+            <h3 class="md:text-6xl text-3xl uppercase pb-4">Systems / Layers III</h3>
+            <p class="max-w-3xl text-base font-normal px-4">
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam
               soluta odit reprehenderit nemo, voluptatem non officia pariatur,
               excepturi obcaecati doloribus suscipit labore dolorem similique
@@ -120,12 +142,7 @@
                         <img class="js-lazy image-loaded" src="https://pro2-bar-s3-cdn-cf3.myportfolio.com/d4d42d62c29db7e3f4e394a5e7b4b4d1/45254974c9f34f7097a9a1ae_rw_1200.jpg?h=90c7aefba4ae3012828bd146f52e5a53" width="950" alt="Image 2">
                     </a>
                 </div>
-            
-                <!-- Continue adding other images similarly... -->
             </div>
-            
-
-
               </div>
             </div>
           </div>
