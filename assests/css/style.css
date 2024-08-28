@@ -238,7 +238,7 @@ ul li {
   background: #696969;
 }
 .fancybox__thumbs,
-.fancybox__toolbar__items--left,
+
 .fancybox__button--zoom,
 .fancybox__button--slideshow,
 .fancybox__button--fullscreen,
@@ -256,3 +256,5 @@ ul li {
     flex: 1;
   }
 }
+
+/* .fancybox__toolbar__items--left, */
