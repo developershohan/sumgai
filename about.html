@@ -21,7 +21,7 @@
       <!-- Header Start -->
 
       <div
-        class="relative md:w-[25%] w-full flex md:flex-col md:justify-start items-center ">
+        class="relative md:w-[25%] w-full flex md:flex-col md:justify-start items-center content-center">
         <!-- logo start -->
         <div class="logo_wrapper flex items-center py-10 px-12 w-full">
           <a href="/" class="m-auto">Matthias Heiderich</a>
@@ -30,13 +30,68 @@
         <!-- nav Start -->
         <div
           class="nav hidden md:flex flex-col items-center gap-4 justify-start">
-          <a href="/" class="uppercase font-bold">Work</a>
-          <ul class="flex flex-col justify-center items-center gap-2">
-            <li>
-              <a href="systems-layers-iii.html">Systems / Layers III</a>
-            </li>
- 
-          </ul>
+          <!-- Photos section Start -->
+          <!-- <div class="photos_section">
+            <a href="/" class="uppercase font-bold">Photos</a>
+            <ul class="flex flex-col justify-center items-center gap-2">
+              <li>
+                <a href="systems-layers-iii.html">Systems / Layers III</a>
+              </li>
+            </ul>
+          </div> -->
+          <!-- Photos section End -->
+          <!-- Photos Area Start -->
+          <div class="photos_area">
+            <ul class="flex flex-col justify-center items-center gap-1">
+              <li class="justify-center">
+                <a href="" class="font-bold text-black uppercase">Photos</a>
+                <ul class="flex flex-col justify-end items-end gap-1 pt-3">
+                  <li>
+                    <a href="systems-layers-iii.html">Systems / Layers III</a>
+                  </li>
+                  <li>
+                    <a href="#">Systems</a>
+                  </li>
+                  <li>
+                    <a href="#">Systems / Layers</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Photos Area End -->
+          <!-- Writing Area Start -->
+          <div class="Writing_area pt-5">
+            <ul class="flex flex-col justify-center items-center gap-2">
+              <li class="justify-center">
+                <a href="" class="font-bold text-black uppercase">Writing</a>
+                <ul class="flex flex-col justify-end items-end gap-1 pt-3">
+                  <li>
+                    <a href="systems-layers-iii.html">Systems / Layers III</a>
+                  </li>
+                  <li>
+                    <a href="#">Systems</a>
+                  </li>
+                  <li>
+                    <a href="#">Systems / Layers</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Writing Area End -->
+
+          <!-- Writing section Start -->
+          <!-- <div class="photos_section">
+            <a href="/" class="uppercase font-bold">Writing</a>
+            <ul class="flex flex-col justify-center items-center gap-2">
+              <li>
+                <a href="systems-layers-iii.html">Systems / Layers III</a>
+              </li>
+            </ul>
+          </div> -->
+          <!-- Photos section End -->
+
           <div class="bottom_nav">
             <ul>
               <li><a href="about.html">About</a></li>
@@ -75,13 +130,66 @@
 
         <!-- Mobile Nav Start -->
         <div
-          class="mobile_nav fixed top-0 bottom-0 left-0 right-0 bg-white flex flex-col items-center h-[100vh] justify-center z-10 gap-6">
-          <a href="/" class="first_menu uppercase font-bold">Work</a>
+          class="mobile_nav fixed top-0 bottom-0 left-0 right-0 bg-white flex flex-col items-center h-[100vh] justify-center gap-4">
+          <!-- <a href="/" class="first_menu uppercase font-bold">Work</a>
           <ul class="flex flex-col justify-center items-center gap-6">
             <li>
               <a href="systems-layers-iii.html">Systems / Layers III</a>
             </li>
-          </ul>
+          </ul> -->
+
+          <!-- Photos Area Start -->
+          <div class="photos_area">
+            <ul class="flex flex-col justify-center items-center gap-1">
+              <li class="justify-center">
+                <div
+                  class="flex relative justify-center text-xl font-bold text-black uppercase gap-2 toggle-menu"
+                  data-menu-open="false">
+                  Photos
+                  <span class="relative flex items-center w-[20px]">
+                    <i class="absolute fa-solid fa-plus"></i>
+                    <i class="absolute fa-solid fa-minus hidden"></i>
+                  </span>
+                </div>
+                <ul
+                  class="sub-menu flex flex-col justify-center items-center gap-1 pt-3">
+                  <li>
+                    <a href="systems-layers-iii.html">Systems / Layers III</a>
+                  </li>
+                  <li><a href="#">Systems</a></li>
+                  <li><a href="#">Systems / Layers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Photos Area End -->
+
+          <!-- Writing Area Start -->
+          <div class="writing_area">
+            <ul class="flex flex-col justify-center items-center gap-2">
+              <li class="justify-center">
+                <div
+                  class="flex relative justify-center text-xl font-bold text-black uppercase gap-2 toggle-menu"
+                  data-menu-open="false">
+                  Writing
+                  <span class="relative flex items-center w-[20px]">
+                    <i class="absolute fa-solid fa-plus"></i>
+                    <i class="absolute fa-solid fa-minus hidden"></i>
+                  </span>
+                </div>
+                <ul
+                  class="sub-menu flex flex-col justify-center items-center gap-1 pt-3">
+                  <li>
+                    <a href="systems-layers-iii.html">Systems / Layers III</a>
+                  </li>
+                  <li><a href="#">Systems</a></li>
+                  <li><a href="#">Systems / Layers</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- Writing Area End -->
+
           <div class="bottom_nav">
             <ul>
               <li><a href="about.html">About</a></li>
