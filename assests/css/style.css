@@ -182,7 +182,10 @@ ul li {
   overflow: hidden;
   transition: opacity 0.3s ease, max-height 0.3s ease;
 }
-
+.close_button {
+  /* color: #000 !important; */
+  z-index: 100;
+}
 /* State when submenu is visible */
 .sub-menu.show {
   opacity: 1;
@@ -234,9 +237,7 @@ ul li {
 .home_content_box:hover .home_content_details {
   opacity: 1;
 }
-.related_project {
-  font-size: ;
-}
+
 
 /* content */
 .home_content_details {
