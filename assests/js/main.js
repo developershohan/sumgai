@@ -98,3 +98,33 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+
+// dropdown header desktop nav
+document.addEventListener("DOMContentLoaded", function () {
+  const toggleMenus = document.querySelectorAll(".toggle-menu-desktop");
+
+  toggleMenus.forEach(toggleMenu => {
+    toggleMenu.addEventListener("click", function () {
+      const subMenu = this.nextElementSibling;
+      const isOpen = this.getAttribute("data-menu-open") === "true";
+
+      // Toggle the visibility of the submenu
+      if (isOpen) {
+        subMenu.classList.remove("show");
+      } else {
+        subMenu.classList.add("show");
+      }
+
+      // Update the data attribute
+      this.setAttribute("data-menu-open", !isOpen);
+
+      // Toggle the plus and minus icons
+      const plusIcon = this.querySelector(".fa-plus");
+      const minusIcon = this.querySelector(".fa-minus");
+
+      plusIcon.classList.toggle("hidden");
+      minusIcon.classList.toggle("hidden");
+    });
+  });
+});
